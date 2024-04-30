@@ -9,7 +9,7 @@ const Header = () => {
         aria-label="home"
         name="home"
         target="_self"
-        className="z-10"
+        className="z-50"
       >
         <RoundCard
           icon="home"
