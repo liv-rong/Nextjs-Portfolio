@@ -5,15 +5,14 @@ import { projectsData } from '../../data'
 
 export default function Home() {
   return (
-    <main className="w-full flex justify-center items-center">
+    <main className=" w-full flex justify-center">
       <Image
         alt="image"
         src={bg}
-        fill
-        className="w-full h-full object-cover object-center opacity-25"
+        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25 "
       ></Image>
       <ProjectsList projects={projectsData} />
-      <div className="flex justify-center items-center fixed top-20 left-0 h-screen">
+      <div className="flex justify-center items-center fixed top-20 -left-24 h-screen">
         <RenderModel>
           <Staff />
         </RenderModel>

@@ -3,7 +3,7 @@ import MusicIcon from '../music/musicIcon'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div className="flex justify-between items-center border z-50 w-full">
+    <div className=" fixed top-4 left-4 right-4 flex justify-between items-center  ">
       <Link
         href="/"
         aria-label="home"
