@@ -5,7 +5,7 @@ import { projectsData } from '../../data'
 
 export default function Home() {
   return (
-    <main className="border w-full flex justify-center items-center">
+    <main className="w-full flex justify-center items-center">
       <Image
         alt="image"
         src={bg}
