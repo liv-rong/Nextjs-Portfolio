@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import bg from '../../../../public/background/about-background.png'
+import bg from '../../../../public/background/contact-background.png'
 import { AboutDetails, Hat, RenderModel } from '@/components/index'
 import { projectsData } from '../../data'
 
