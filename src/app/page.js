@@ -2,7 +2,7 @@ import Image from 'next/image'
 import bg from '../../public/background/home-background.png'
 import RenderModel from '@/components/RenderModel'
 import Wizard from '@/components/Models/Wizard'
-import Navigation from '@/components/Navigation'
+import Navigation from '@/components/navigation/nav'
 
 export default function Home() {
   return (

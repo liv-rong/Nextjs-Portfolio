@@ -1,6 +1,13 @@
+'use client'
 import { BtnList } from '@/app/data'
 import NavButton from '../NavButton'
+// import useScreenSize from '@/components/hooks/useScreenSize'
+
+import useScreenSize from '../../hooks/useScreenSize/index.js'
+
 const Navigation = () => {
+  const size = useScreenSize()
+  console.log(size)
   const angleIncrement = 360 / BtnList.length
   return (
     <div className="fixed w-full h-screen flex items-center justify-center z-10">
