@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import clsx from 'clsx'
-import FireFilesbg from '@/components/FireFilesbg'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+import { Footer, FireFilesbg } from '@/components/index'
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className={(clsx(inter.variable), 'bg-background text-foreground')}>
         {children}
         <FireFilesbg />
+        <Footer />
       </body>
     </html>
   )
