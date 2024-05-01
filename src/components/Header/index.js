@@ -1,9 +1,9 @@
 import RoundCard from '../Card/RoundCard'
-import MusicIcon from '../music/musicIcon'
+import MusicIcon from '../Music/MusicIcon'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div className=" fixed top-4 left-4 right-4 flex justify-between items-center  ">
+    <div className="w-screen fixed px-2 top-4 left-0 right-0 flex justify-between items-center  ">
       <Link
         href="/"
         aria-label="home"
@@ -16,8 +16,10 @@ const Header = () => {
           label="Home"
         />
       </Link>
-
-      <MusicIcon icon="home" />
+      <div>
+        <MusicIcon />
+        <div id="my-modal" />
+      </div>
     </div>
   )
 }

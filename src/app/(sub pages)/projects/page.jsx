@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className=" w-full flex justify-center border">
+    <main className=" w-full flex justify-center ">
       <Image
         alt="image"
         src={bg}
@@ -22,7 +22,7 @@ export default function Home() {
         sizes="100vw"
       ></Image>
       <ProjectsList projects={projectsData} />
-      <div className="flex justify-center items-center fixed top-20 -left-24 h-screen">
+      <div className="flex   justify-center items-center fixed top-20 left-1/5  sm:-left-24  h-screen z-10">
         <RenderModel>
           <Staff />
         </RenderModel>

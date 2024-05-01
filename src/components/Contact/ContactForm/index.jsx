@@ -2,6 +2,23 @@
 
 import { useForm } from 'react-hook-form'
 import { Toaster, toast } from 'sonner'
+import { motion } from 'framer-motion'
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2
+    }
+  }
+}
+
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 }
+}
 
 const ContactForm = () => {
   const {
@@ -24,12 +41,16 @@ const ContactForm = () => {
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <>
       <Toaster richColors={true} />
-      <form
+      <motion.form
+        variants={container}
+        initial="hidden"
+        animate="show"
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-md w-full flex flex-col items-center justify-center gap-4"
       >
         {/* register your input into the hook by invoking the "register" function */}
-        <input
+        <motion.input
+          variants={item}
           type="text"
           placeholder="name"
           {...register('name', {
@@ -46,7 +67,8 @@ const ContactForm = () => {
         )}
 
         {/* include validation with required or other standard HTML validation rules */}
-        <input
+        <motion.input
+          variants={item}
           type="email"
           placeholder="email"
           {...register('email', { required: 'This field is required!' })}
@@ -56,7 +78,8 @@ const ContactForm = () => {
           <span className="inline-block self-start text-accent">{errors.email.message}</span>
         )}
 
-        <textarea
+        <motion.textarea
+          variants={item}
           placeholder="message"
           {...register('message', {
             required: 'This field is required!',
@@ -75,14 +98,15 @@ const ContactForm = () => {
           <span className="inline-block self-start text-accent">{errors.message.message}</span>
         )}
 
-        <input
+        <motion.input
+          variants={item}
           type="submit"
           value="Cast your message!"
           className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
       hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
       "
         />
-      </form>
+      </motion.form>
     </>
   )
 }

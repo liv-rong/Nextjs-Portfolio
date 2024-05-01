@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import bg from '../../public/background/home-background.png'
-import RenderModel from '@/components/RenderModel'
-import Wizard from '@/components/Models/Wizard'
-import Navigation from '@/components/navigation/nav'
+import { MusicIcon, Navigation, Wizard, RenderModel } from '@/components'
 
 export default function Home() {
   return (
@@ -23,6 +21,10 @@ export default function Home() {
         </RenderModel>
 
         {/* 3D 渲染 */}
+      </div>
+      <div className="flex  absolute top-0 right-0 m-2">
+        <MusicIcon />
+        <div id="my-modal" />
       </div>
     </main>
   )

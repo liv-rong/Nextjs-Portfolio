@@ -2,8 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import clsx from 'clsx'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-import { Footer, FireFilesbg, ResponsiveComponent } from '@/components/index'
-// import { useScreenSize } from '@/hooks'
+import { Footer, FireFilesbg } from '@/components/index'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,15 +10,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  // const screenSize = useScreenSize()
-  // console.log(screenSize)
   return (
     <html lang="en">
       <body className={(clsx(inter.variable), 'bg-background text-foreground')}>
         <div className="relative">
           {children}
           <FireFilesbg />
-          {/* <ResponsiveComponent /> */}
+
           <Footer />
         </div>
       </body>

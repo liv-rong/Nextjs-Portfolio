@@ -1,9 +1,8 @@
-import SquareCard from '@/components/card/SquareCard'
-import Link from 'next/link'
+import SquareCard from '@/components/Card/SquareCard'
 
 const AboutDetails = () => {
   return (
-    <div className="py-20 w-full ">
+    <div className="py-2 w-full ">
       {/* <h1>About Details</h1> */}
       {/* Add more details about the project */}
       <div className="grid grid-cols-12 gap-8 w-full">

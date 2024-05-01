@@ -4,7 +4,7 @@ import { ContactForm } from '@/components/index'
 
 export default function Home() {
   return (
-    <div className="border">
+    <div className="">
       <Image
         src={bg}
         alt="Next.js Portfolio website's contact page background image"

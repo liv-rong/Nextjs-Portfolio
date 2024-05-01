@@ -10,7 +10,7 @@ const RoundCard = ({ icon, children }) => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className="text-foreground  rounded-full flex justify-center
-        items-center  custom-bg cursor-pointer z-20"
+        items-center  custom-bg cursor-pointer z-20 "
     >
       <span className=" p-4 w-16 h-16  relative  hover:text-accent">
         {getIcon(icon)}
