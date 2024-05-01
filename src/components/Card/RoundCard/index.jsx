@@ -1,7 +1,14 @@
+'use client'
+import { motion } from 'framer-motion'
 import { getIcon } from '@/utils'
+
 const RoundCard = ({ icon, children }) => {
   return (
-    <div
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
       className="text-foreground  rounded-full flex justify-center
         items-center  custom-bg cursor-pointer z-20"
     >
@@ -9,7 +16,7 @@ const RoundCard = ({ icon, children }) => {
         {getIcon(icon)}
         {children}
       </span>
-    </div>
+    </motion.div>
   )
 }
 

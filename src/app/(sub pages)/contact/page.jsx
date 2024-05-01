@@ -4,7 +4,7 @@ import { ContactForm } from '@/components/index'
 
 export default function Home() {
   return (
-    <>
+    <div className="border">
       <Image
         src={bg}
         alt="Next.js Portfolio website's contact page background image"
@@ -28,6 +28,6 @@ export default function Home() {
         </div>
         <ContactForm />
       </article>
-    </>
+    </div>
   )
 }

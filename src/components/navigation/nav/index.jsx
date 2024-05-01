@@ -41,8 +41,8 @@ const Navigation = () => {
               })}
             </div>
           ) : (
-            <div className="border w-full h-[300px]">
-              <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-64 items-end xs:items-center justify-center relative group xs:hidden">
+            <div className="w-full flex items-center justify-center relative group">
+              <div className="w-full  px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 items-start xs:items-center justify-center relative group xs:hidden">
                 {BtnList.slice(0, BtnList.length / 2).map((btn) => {
                   return (
                     <NavButton
@@ -55,7 +55,7 @@ const Navigation = () => {
                   )
                 })}
               </div>
-              <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-64 items-end xs:items-center justify-center relative group xs:hidden">
+              <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 items-end xs:items-center justify-center relative group xs:hidden">
                 {BtnList.slice(BtnList.length / 2, BtnList.length).map((btn) => {
                   return (
                     <NavButton

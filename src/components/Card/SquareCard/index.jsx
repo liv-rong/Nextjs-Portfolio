@@ -1,15 +1,21 @@
+'use client'
+import { motion } from 'framer-motion'
 import clsx from 'clsx'
 
 const SquareCard = ({ children, className }) => {
   return (
-    <div
+    <motion.div
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
       className={clsx(
         'custom-bg rounded-xl  flex items-center justify-center space-y-8 p-8',
         className
       )}
     >
       {children}
-    </div>
+    </motion.div>
   )
 }
 

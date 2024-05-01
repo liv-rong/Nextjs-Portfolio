@@ -1,5 +1,6 @@
 import SquareCard from '@/components/card/SquareCard'
 import Link from 'next/link'
+
 const AboutDetails = () => {
   return (
     <div className="py-20 w-full ">

@@ -1,14 +1,16 @@
+'use client'
 import Link from 'next/link'
 import { getIcon } from '@/utils'
 import ResponsiveComponent from '@/components/ResponsiveComponent'
 import { motion } from 'framer-motion'
+import clsx from 'clsx'
 
 const NavLink = motion(Link)
 const item = {
   hidden: { scale: 0 },
   show: { scale: 1 }
 }
-const NavButton = ({ x, y, label, link, icon, newTab }) => {
+const NavButton = ({ x, y, label, link, icon, newTab, labelDirection = 'right' }) => {
   return (
     <ResponsiveComponent>
       {({ size }) => {
