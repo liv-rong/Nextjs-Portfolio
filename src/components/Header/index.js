@@ -3,7 +3,7 @@ import MusicIcon from '../Music/MusicIcon'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div className="w-screen fixed px-2 top-4 left-0 right-0 flex justify-between items-center  ">
+    <div className="w-screen fixed px-2 top-4 left-0 right-0 flex justify-between items-center  z-50">
       <Link
         href="/"
         aria-label="home"

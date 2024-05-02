@@ -1,10 +1,35 @@
-import { Home, User, Palette, Phone, Github, Linkedin, Twitter, NotebookText } from 'lucide-react'
+import {
+  Home,
+  Volume2,
+  VolumeX,
+  User,
+  Palette,
+  Phone,
+  Github,
+  Linkedin,
+  Twitter,
+  NotebookText
+} from 'lucide-react'
 
 export const getIcon = (icon) => {
   switch (icon) {
     case 'home':
       return (
         <Home
+          className="w-full h-auto"
+          strokeWidth={1.5}
+        />
+      )
+    case 'Volume2':
+      return (
+        <Volume2
+          className="w-full h-auto"
+          strokeWidth={1.5}
+        />
+      )
+    case 'VolumeX':
+      return (
+        <VolumeX
           className="w-full h-auto"
           strokeWidth={1.5}
         />
@@ -16,6 +41,7 @@ export const getIcon = (icon) => {
           strokeWidth={1.5}
         />
       )
+
     case 'projects':
       return (
         <Palette
