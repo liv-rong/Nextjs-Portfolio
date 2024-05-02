@@ -8,3 +8,4 @@ BookpCube10
 HatpPlane1
 Rong
 lucide
+sonner
