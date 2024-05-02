@@ -19,7 +19,6 @@ const Navigation = () => {
         {({ size }) => {
           return size && size >= 480 ? (
             <div className="w-max flex items-center justify-center relative hover:pause animate-spin-slow group">
-              2222
               {BtnList.map((btn, index) => {
                 const angleRad = (index * angleIncrement * Math.PI) / 180
                 const radius = isLarge
