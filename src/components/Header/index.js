@@ -1,5 +1,5 @@
-import RoundCard from '../Card/RoundCard'
-import MusicIcon from '../Music/MusicIcon'
+import RoundCard from '@/components/Card/RoundCard'
+import MusicIcon from '@/components/Music/MusicIcon'
 import Link from 'next/link'
 const Header = () => {
   return (
