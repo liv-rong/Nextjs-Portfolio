@@ -1,5 +1,9 @@
 {
-  "name": "nextjs-creative-portfolio-starter-code-files",
+  "name": "Ivy-rong portfolio",
+  "description": "Ivy Rong's portfolio website",
+  "author": "Ivy Rong",
+  "license": "MIT",
+  "repository": "https://github.com/ivy-rong",
   "version": "0.1.0",
   "private": true,
   "scripts": {
