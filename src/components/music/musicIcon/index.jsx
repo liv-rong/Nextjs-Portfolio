@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { getIcon } from '@/utils'
-import MusicModal from '../MusicModel'
+import MusicModal from '@/components/Music/MusicModel'
 const MusicIcon = () => {
   const audioRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
